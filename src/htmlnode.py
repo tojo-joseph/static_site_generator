@@ -34,21 +34,29 @@ class ParentNode(HTMLNode):
     def __init__(self, tag, children, props):
         super().__init__(tag, None, children, props)
     
-    def to_html(self):
+    def to_html(self, acc=''):
         if self.tag == None:
             raise ValueError('The tag is required in ParentNode')
+        acc += f"<{self.tag}>"
         if self.children == None:
             raise ValueError('This property is required in ParentNode')
-        if self.children.length > 0 or not isinstance(other, ParentNode):
-            return
+        if len(self.children) == 0:
+            return 
         else:
-            self.children = self.children[1:]
-            print(f"<{self.tag}>{self.value}")
-            return self.children.to_html()
+            for child in self.children:
+                acc += child.to_html()
+            acc += f"</{self.tag}>"
+            return acc
+        
     
 def main():
-    my_node = HTMLNode("p", 'light', None, '{ "class": "d-flex", "style": "{ padding: 0}"}')
-    return my_node
+    my_node = ParentNode("p", [
+        LeafNode("b", "Bold text"),
+        LeafNode(None, "Normal text"),
+        LeafNode("i", "italic text"),
+        LeafNode(None, "Normal text"),
+    ], None)
+    return my_node.to_html()
 
 result = main()
 print(result)
