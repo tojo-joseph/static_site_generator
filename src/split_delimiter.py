@@ -12,17 +12,18 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
         if node.text_type != text_type_text:
             result.append(node)
             continue
+        split_nodes = []
         sections = node.text.split(delimiter)
         if len(sections) % 2 == 0:
             raise ValueError("Invalid markdown, formatted section not closed")
-        # splitting text according to delimiter
         for i in range(0, len(sections)):
             if sections[i] == "":
                 continue
             if i % 2 == 0:
-                result.append(TextNode(sections[i], text_type_text))
+                split_nodes.append(TextNode(sections[i], text_type_text))
             else:
-                result.append(TextNode(sections[i], text_type))
+                split_nodes.append(TextNode(sections[i], text_type))
+        result.extend(split_nodes)
     
     return result
 
