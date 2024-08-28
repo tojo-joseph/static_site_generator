@@ -18,3 +18,7 @@ This project is a Python-powered static site generator that converts Markdown fi
 
 - **Customizable Templates:** Allows for custom HTML templates to be used for a more  
   personalized look.
+
+Here is a screenshot of the project:
+
+![Screenshot of the project](scrnshts/site_screenshot.png)
