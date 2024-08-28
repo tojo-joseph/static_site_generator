@@ -7,14 +7,14 @@ This project is a Python-powered static site generator that converts Markdown fi
 
 ### Features
 
-- **Markdown to HTML Conversion:** Easily convert your Markdown files into clean, responsive
+- **Markdown to HTML Conversion:** Easily convert your Markdown files into clean, responsive 
   HTML pages.
 
-- **Local Web Server:** Automatically serves your generated HTML pages on a local web server for
+- **Local Web Server:** Automatically serves your generated HTML pages on a local web server for 
   easy preview.
 
-- **Lightweight & Fast:** Built with performance in mind, this generator processes files quickly and
+- **Lightweight & Fast:** Built with performance in mind, this generator processes files quickly and 
   efficiently.
 
-- **Customizable Templates:** Allows for custom HTML templates to be used for a more
+- **Customizable Templates:** Allows for custom HTML templates to be used for a more 
   personalized look.
