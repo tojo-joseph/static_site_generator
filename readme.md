@@ -1,11 +1,11 @@
-**# Markdown-to-HTML Static Site Generator**
+# Markdown-to-HTML Static Site Generator
 
 
-**### Overview**
+### Overview
 
 This project is a Python-powered static site generator that converts Markdown files into HTML pages and hosts them on a local web server. It is designed to be simple, efficient, and perfect for anyone who loves working with Markdown and wants to quickly create a static website.
 
-**### Features**
+### Features
 
 - **Markdown to HTML Conversion:** Easily convert your Markdown files into clean, responsive HTML pages.
 
